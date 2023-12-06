@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 0.3s;
+        }
+
+        section {
+            padding: 50px;
+            margin-top: 60px; /* Adjust margin to prevent content from being hidden under the fixed header */
+        }
+
+        /* Style for the navigation links (optional) */
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sticky Header</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Main Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+    </section>
+
+    <script>
+        // JavaScript to add a class when scrolling down, making the header sticky
+        window.onscroll = function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        };
+    </script>
+</body>
+</html>
