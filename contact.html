@@ -2,44 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ola.css">
-    <title>contact page</title>
+    <title>about</title>
+    <link rel="stylesheet" href="./olam.css">
    
 </head>
-<body>
+   <body>
     <header>
-        <h1>Hollaking Gym</h1>
-    </header>
-
-    <nav>
-        <a href="./solo.html">Home</a>
-        <a href="#">Classes</a>
-        <a href="./schedule.html">Schedule</a>
-        <a href="./contact.html">Contact</a>
-    </nav>
-
-    <section>
-        <h2>Classes Offered</h2>
-        <div class="class-container">
-            <div class="class">
-                <h3>Cardio Kickboxing</h3>
-                <p>High-intensity cardio workout combining elements of martial arts.</p>
-            </div>
-            <div class="class">
-                <h3>Strength Training</h3>
-                <p>Build muscle and increase strength with our dedicated weightlifting program.</p>
-            </div>
-            <div class="class">
-                <h3>Yoga</h3>
-                <p>Relax and rejuvenate your mind and body with our yoga classes.</p>
-            </div>
-            <!-- Add more classes as needed -->
+        <div class="container">
+            <div id="branding">
+                <h1>Hollaking Gym</h1>
+           </div>
+           <nav>
+            <section>
+             <ul>
+                <a href="./classes.html" onclick="alertClass('Home')">Home</a>
+                <a href="./classes.html" onclick="alertClass('Classes')">Classes</a>
+                <a href="./schedule.html" onclick="alertClass('Schedule')">Schedule</a>
+                <a href="./contact.html" onclick="alertClass('Contact')">Contact</a>
+            </nav>
+                
+              
+             </ul>
+            </section>
+           </nav>
         </div>
-    </section>
+    </header>
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe To Our Newsletter</h1>
+            <form>
+                <input type="email"placeholder="Enter Email..."required>
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+   </section>
 
-    <footer>
+   <section id="main">
+      <div class="container">
+        <article id="main-col">
+            <h1 class="page-title">About Us</h1>
+            <p>We are on a mission to accelerate the pace and consolidate the 
+                efficacy of the educational system at a whole new level beyond 
+                imaginations... Our software are design to make your work fast 
+                to productive, accurate and timeline
+            </p>
+            <p class="dark">
+                Aliquam eget pharetra diam. Nulla placerat Lorem ipsum dolor sit
+                 amet consectetur adipisicing elit.Aut omnis at velit, magnam accusantium quod,
+                  id dignissimos facilis rem quisquam repellendus dolore 
+                 nesciunt,obcaecati porro corporis dicta nostrum eveniet nihil?
+
+            </p>
+        </article>
+
+
+        <aside id="sidebar">
+            <div class="dark">
+                <h3>What We Do </h3>
+                <p>At Hollaking Gym, we're dedicated to elevating your fitness and well-being beyond 
+                    the ordinary. Offering a diverse range of activities tailored to various fitness 
+                    preferences, our holistic approach ensures a comprehensive health improvement 
+                    experience.
+
+                    Our fitness regimen includes essential cardiovascular exercises like running and 
+                    cycling, promoting not only cardiovascular health but also aiding in weight 
+                    management and boosting overall stamina. From seasoned runners to fitness beginners,
+                     our cutting-edge facilities cater to individuals of all fitness levels.!</p>
+                </div>        
+        </aside>
+      </div>
+   </section>
+       <footer>
         <p>&copy; 2023 Hollaking Gym. All rights reserved.</p>
-    </footer>
-</body>
+       </footer>
+  </body>
 </html>
