@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Schedule</title>
+    <title>Homepage</title>
   </head>
   <body>
     <header>
@@ -12,33 +12,32 @@
     </header>
 
     <nav>
-      <a href="./frontpage.html">Home</a>
-      <a href="./classes.html">Classes</a>
-      <a href="./schedule.html">Schedule</a>
-      <a href="./about.html">About</a>
+      <a href="./classes.html" onclick="alertClass('Home')">Home</a>
+      <a href="./classes.html" onclick="alertClass('Classes')">Classes</a>
+      <a href="./schedule.html" onclick="alertClass('Schedule')">Schedule</a>
+      <a href="./about.html" onclick="alertClass('Contact')">About</a>
     </nav>
 
     <section>
       <h2>Classes Offered</h2>
       <div class="class-container">
-        <div class="class">
+        <div class="class" onclick="alertClass('Cardio Kickboxing')">
           <h3>Cardio Kickboxing</h3>
           <p>
             High-intensity cardio workout combining elements of martial arts.
           </p>
         </div>
-        <div class="class">
+        <div class="class" onclick="alertClass('Strength Training')">
           <h3>Strength Training</h3>
           <p>
             Build muscle and increase strength with our dedicated weightlifting
             program.
           </p>
         </div>
-        <div class="class">
+        <div class="class" onclick="alertClass('Yoga')">
           <h3>Yoga</h3>
           <p>Relax and rejuvenate your mind and body with our yoga classes.</p>
         </div>
-        <!-- Add more classes as needed -->
       </div>
     </section>
 

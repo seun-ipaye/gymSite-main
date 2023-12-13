@@ -4,10 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about</title>
-    <link rel="stylesheet" href="./olam.css">
+    <title>About</title>
+    <link rel="stylesheet" href="./styles.css">
+   
+</head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepage</title>
    
 </head>
+<body>
+    <header>
+        <h1>Hollaking Gym</h1>
+    </header>
+
+    <nav>
+        
+        <a href="./classes.html" onclick="alertClass('Home')">Home</a>
+        <a href="./classes.html" onclick="alertClass('Classes')">Classes</a>
+        <a href="./schedule.html" onclick="alertClass('Schedule')">Schedule</a>
+        <a href="./about.html" onclick="alertClass('Contact')">About</a>
+    </nav>
+
+    <section>
+        <h2>Classes Offered</h2>
+        <div class="class-container">
+            <div class="class" onclick="alertClass('Cardio Kickboxing')">
+                <h3>Cardio Kickboxing</h3>
+                <p>High-intensity cardio workout combining elements of martial arts.</p>
+            </div>
+            <div class="class" onclick="alertClass('Strength Training')">
+                <h3>Strength Training</h3>
+                <p>Build muscle and increase strength with our dedicated weightlifting program.</p>
+            </div>
+            <div class="class" onclick="alertClass('Yoga')">
+                <h3>Yoga</h3>
+                <p>Relax and rejuvenate your mind and body with our yoga classes.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hollaking Gym. All rights reserved.</p>
+    </footer>
+   
+</body>
+</html>
+
    <body>
     <header>
         <div class="container">
@@ -20,7 +67,7 @@
                 <a href="./classes.html" onclick="alertClass('Home')">Home</a>
                 <a href="./classes.html" onclick="alertClass('Classes')">Classes</a>
                 <a href="./schedule.html" onclick="alertClass('Schedule')">Schedule</a>
-                <a href="./contact.html" onclick="alertClass('Contact')">Contact</a>
+                <a href="./about.html" onclick="alertClass('Contact')">About</a>
             </nav>
                 
               
